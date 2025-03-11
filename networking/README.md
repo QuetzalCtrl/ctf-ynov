@@ -10,11 +10,11 @@ Les participants doivent accéder à un serveur FTP en mode anonyme, télécharg
         Le serveur FTP aura donc un accès anonyme ou trouvable par crackage de password (read-only).
 
     **Contiendra :**
-        **-Le fichier PCAP Trames Réseau :**
+        - Le fichier PCAP Trames Réseau :
             Contiendra une partie du flag hashé 
-        **- Le fichier PCAP VOIP:**
+        - Le fichier PCAP VOIP:
            Contiendra une partie du flag en clair 
-        **-Script aidant au déhashage d'un des flags**
+        - Script aidant au déhashage d'un des flags
             Pourra s'appuyer sur les données des 2 flags pour donner une pseudo clé de déhashage ...
 
 3. **Analyse des Fichiers PCAP :**
