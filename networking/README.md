@@ -26,24 +26,7 @@ Les participants doivent accéder à un serveur FTP en mode anonyme, télécharg
 
 3. **Décodage du fichier PCAP**
         L'utilitaire permettra de déhasher correctement le flag en donnant des indices pour atteindre l'objectif final.
-#### **Instructions pour les Participants :**
 
-1. **Connexion au Serveur FTP :**
-   - Utilisez un client FTP (comme FileZilla ou la ligne de commande) pour vous connecter à `ftp.example.com` en mode anonyme.
-   - Téléchargez les fichiers `voip_capture.pcap` et `network_capture.pcap`.
-
-2. **Analyse du Fichier `voip_capture.pcap` :**
-   - Ouvrez le fichier `voip_capture.pcap` avec Wireshark.
-   - Utilisez les filtres de Wireshark pour isoler les flux VoIP (par exemple, `sip` ou `rtp`).
-   - Écoutez les conversations VoIP pour trouver un flag caché dans les dialogues.
-   - **Exemple de flag** : `FLAG{VOIP_SECRET_MESSAGE}`
-
-3. **Analyse du Fichier `network_capture.pcap` :**
-   - Ouvrez le fichier `network_capture.pcap` avec Wireshark.
-   - Utilisez les filtres de Wireshark pour isoler les trames HTTP ou DNS (par exemple, `http` ou `dns`).
-   - Analysez les données pour trouver un flag caché dans les requêtes ou réponses.
-   - **Exemple de flag** : `FLAG{NETWORK_SECRET_DATA}`
-
-- **But de ce challenge** :
+#### **But de ce challenge** :
   - Recherchez des anomalies ou des données inhabituelles dans les trames HTTP ou DNS qui pourraient indiquer la présence d'un flag.
   - Mettre en application des méthodes de déhashage afin d'obtenir l'objectif final
