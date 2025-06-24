@@ -1,30 +1,40 @@
-# Networking
-### Challenge : Analyse de Fichiers PCAP via FTP
+# Networking & crypto
+**Challenge : Analyse Réseau et Audio**
+**Mission :**
+Votre équipe d'analyste en cybersécurité vous a fourni des fichiers concernant une capture réseau suspecte.
+Vous deviez retrouver les informations afin de résoudre ce challenge !
 
-#### **Objectif :**
-Les participants doivent accéder à un serveur FTP en mode anonyme, télécharger des fichiers PCAP contenant des captures de trafic VoIP et des trames réseau, puis analyser ces fichiers pour trouver des flags cachés.
+Ce challenge a été développé en 2025 dans le cadre du projet de sécurité réseau 
+avec la référence technique **CTF_WIRED_2025** pour l'équipe d'investigation numérique
 
-#### **Description du Challenge :**
+**Fichiers :**
+network_traces.pcap : Trafic réseau avec une partie du flag cachée.
+flag_audio.wav : Fichier audio contenant l'autre partie du flag.
 
-1. **Le Serveur FTP :**
-   - Le serveur FTP aura un accès anonyme ou trouvable par crackage de mot de passe (read-only).
+**Méthode conseillée**
+1. Analyser le fichier PCAP pour identifier les informations utiles (dans les ports, addresses ...)
+2. Ecouter le fichier audio pour obtenir des informations
+3. Rassembler les informations
 
-   **Contenu :**
-   - **Fichier PCAP Trames Réseau :**
-     - Contiendra une partie du flag hashé.
-   - **Fichier PCAP VoIP :**
-     - Contiendra une partie du flag en clair.
-   - **Script d'Aide au Déhashage :**
-     - Pourra s'appuyer sur les données des deux flags pour donner une pseudo-clé de déhashage.
+**Objectif :**
+Trouver les deux parties du flag et les assembler pour obtenir le flag complet.
 
-2. **Analyse des Fichiers PCAP :**
-   - Cette tâche consistera à analyser les différents fichiers contenant les fragments de flags.
-   - Les deux fichiers PCAP seront donc indissociables pour la recherche d'informations.
-   - L'utilisation de Wireshark avec ses différents modes d'analyse de trames sera donc très utile.
+**Outils :**
+- Wireshark
+- Lecteur audio
 
-3. **Décodage du Fichier PCAP :**
-   - L'utilitaire permettra de déhasher correctement le flag en donnant des indices pour atteindre l'objectif final.
+NOTE : 
+- Certaines données peuvent être hashées 
 
-#### **But de ce Challenge :**
-- Rechercher des anomalies ou des données inhabituelles dans les trames HTTP ou DNS qui pourraient indiquer la présence d'un flag.
-- Mettre en application des méthodes de déhashage afin d'obtenir l'objectif final.
+La Corrélation des données est essentielle pour résoudre ce challenge
+
+**Indices :(caché au début)**
+Une partie du flag est cachée dans les ports sources du trafic réseau.
+L'autre partie est prononcée dans le fichier audio.
+Un code secret est mentionné dans la description du challenge.
+
+
+
+
+   
+
