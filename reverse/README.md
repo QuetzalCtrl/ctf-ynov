@@ -13,5 +13,3 @@ L’objectif est d’afficher un flag caché en manipulant le programme via un d
 Le programme demande à l’utilisateur d’entrer un mot de passe.
 Même avec le bon mot de passe, le message affiché est "Mauvais mot de passe".
 Le flag est caché dans le binaire et n’est affiché que si l’utilisateur modifie l’exécution en mémoire (via un debugger).
-
-## Chall 2 : Avoir 
