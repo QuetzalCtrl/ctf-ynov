@@ -29,7 +29,7 @@ NOTE :
 La Corrélation des données est essentielle pour résoudre ce challenge
 
 **Indices :(caché au début)**
-Une partie du flag est cachée dans les ports sources du trafic réseau.
+#Une partie du flag est cachée dans les ports sources du trafic réseau.
 L'autre partie est prononcée dans le fichier audio.
 Un code secret est mentionné dans la description du challenge.
 
