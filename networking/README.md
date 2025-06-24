@@ -36,7 +36,7 @@ Trouver les deux parties du flag et les assembler pour obtenir le flag complet.
 ### Outils recommandés
 
 - [Wireshark](https://www.wireshark.org/)
-- Un lecteur audio (VLC, Windows Media Player, etc.)
+- Un lecteur audio
 
 ---
 
@@ -44,7 +44,7 @@ Trouver les deux parties du flag et les assembler pour obtenir le flag complet.
 
 - Certaines données peuvent être **hashées**.
 - Vous pouvez vérifier le hash avec la partie 2 du flag et le salt.
-- La **corrélation des données** entre les fichiers est essentielle pour résoudre ce challenge.
+- La **corrélation des données** entre les fichiers est essentielle.
 
 ---
 
