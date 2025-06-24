@@ -1,18 +1,20 @@
 # Web
 
-## Chall 1 : Cloud
+## Chall 1 : Système ou Web ?
 
-Dans l'idée, créer une instance EC2 sur AWS, qui aurait une snapshot publique --> point d'entrée 
-Il faudrait donc créer un volume pour loader la snapshot, faire de l'inspection locale, et remonter à des git logs présents uniquement sur cette snapshot, dans lequel le flag serait caché
-lien utile : https://hackingthe.cloud/aws/enumeration/loot_public_ebs_snapshots/
+On nous donne un lien vers un site : https://hugovrbs.com/terminal
+Ici, on va devoir fouiller dans les fichiers js, pour trouver la valeur du fichier secret.txt, ou alors utiliser les bonnes commandes dans le terminal interractif web pour y accéder !
+Challenge simple, et basique pour s'échauffer sur du web. Accessible aux débutants.
 
-## Chall 2 : log4j 
+## Chall 2 : La flasque
 
-Petite application web qui utilise une version non patchée de log4j 
---> POC de log4shell
-Lien utile : https://github.com/kozmer/log4j-shell-poc
+Le plus costaud, un vrai challenge type machine HTB. On a au programme : 
+- une machine à scanner,
+- des routes web secrètes à trouver,
+- un reverse proxy à bypasser avec du spoofing d'IP,
+- des params GET à bruteforce,
+- une faille SSTI à exploiter en python,
+- un reverse shell à spawn,
+- une escalade de privilège pour finir le challenge.
 
-## Chall 3 : XSS, SQLi ou CSRF 
-
-à voir comment le rendre original, mais dans l'idée : une injection peu commune, genre une XSS dans un pdf à upload ou quelque chose d'assez tordu comme ça
-Lien utile : https://github.com/pimcore/admin-ui-classic-bundle/security/advisories/GHSA-jfxw-6c5v-c42f
+Challenge uploadé sur tryhackme pour une question de practicité (aucune install ou docker à spawn), dispo ici : https://tryhackme.com/jr/vulnerrable
