@@ -30,7 +30,7 @@ Votre objectif : retrouver les informations cachées pour résoudre ce challenge
 ### Objectif
 
 Trouver les deux parties du flag et les assembler pour obtenir le flag complet.
-
+Reconstituer le flag complet au format CTF{flag1_flag2}
 ---
 
 ### Outils recommandés
