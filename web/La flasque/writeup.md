@@ -93,7 +93,7 @@ _/
 [✓] parameter detected: command, based on: body length
 [+] Parameters found: command
 ```
-`Arjun` found a parameter that changed the page's body length, interesting ! Let's see what this param really does: 
+`Arjun` a trouvé un paramètre qui fait changer la taille du corps de la page, intéressant ! Regardons ce que ce paramètre fait: 
 ```bash
 $ curl -H "X-Forwarded-For: 127.0.0.1" http://192.168.56.80/2e51aab2-8824-47a6-9492-2dd9d533644a?command=test
 <!DOCTYPE html>
@@ -168,7 +168,7 @@ User flaskit may run the following commands on vuln-err-able:
 (ALL) NOPASSWD: /bin/sed
 ```
 
-Et voilà, c'est fini. On peut exécuter la commande `sed` en tant que super utilisateur via sudo. On fait un tour sur [GTFOBins](https://gtfobins.github.io/), et on trouve ([cette page](https://gtfobins.github.io/gtfobins/sed/)) qui dit comment utiliser `sed` pour spawn un shell !
+C'est presque fini :) On peut exécuter la commande `sed` en tant que super utilisateur via sudo. On fait un tour sur [GTFOBins](https://gtfobins.github.io/), et on trouve ([cette page](https://gtfobins.github.io/gtfobins/sed/)) qui dit comment utiliser `sed` pour spawn un shell !
 
 
 ```
