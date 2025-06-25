@@ -25,7 +25,13 @@ Projet de développement d'un CTF pour ynov, différentes catégories seront pro
 - [Reverse](./reverse/README.md)
 - [Web](./web/README.md)
 
-## Infrastructure 
+## Infrastructure
 
-Le projet se basera sur [la plateforme CTFd](https://github.com/CTFd/CTFd) pour déployer les différents challenges et l'infrastructure nécessaire. La plupart des challenges seront des dockers à déployer, ou des fichiers à télécharger en local. 
-Lien utile pour un exemple de déploiement de CTFd en local : https://www.youtube.com/watch?v=BrE_sAtGKqo
+Le projet se base sur [la plateforme CTFd](https://github.com/CTFd/CTFd) pour déployer les différents challenges et l'infrastructure nécessaire. 
+Pour lancer le CTF : 
+```bash
+docker pull quetzalctrl/ynov_ctf:v2.0
+docker run -p 8000:8000 quetzalctrl/ynov_ctf:v2.0
+```
+Puis, accédez à votre localhost sur le port 8000 pour commencer les challenges (http://localhost:8000 -> register -> challenges) ! Bonne chance :) 
+
