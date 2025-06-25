@@ -1,0 +1,39 @@
+ Étapes de la résolution
+Exécution du programme :
+
+Le programme C# demande un mot de passe à l'utilisateur.
+
+Peu importe le mot de passe, la condition if (false) empêche l'affichage du flag.
+
+Le programme affiche toujours "Mot de passe incorrect !".
+
+Analyse du programme :
+
+Le code source contient un tableau flag_chiffre qui est chiffré à l’aide d’un XOR avec une clé (0xAA).
+
+Le flag est donc caché dans le programme sous forme chiffrée.
+
+Utilisation de dnSpy pour le débogage :
+
+Ouvre le fichier .exe dans dnSpy.
+
+Localise la méthode Main() et la condition if (false) dans le programme.
+
+Le programme s'arrête au niveau de la ligne Console.WriteLine("Mot de passe incorrect !");, mais cette condition peut être contournée.
+
+Modification de la condition if (false) :
+
+Utilise Set Next Statement dans dnSpy pour forcer l'exécution du bloc de code après la condition if (false).
+
+Cela permet de contourner la vérification et d’afficher le flag directement.
+
+Décryptage du flag :
+
+Le flag était chiffré avec un XOR utilisant la clé 0xAA.
+
+Après avoir contourné la condition, le programme déchiffre le flag et l'affiche correctement.
+
+Flag affiché :
+
+Après avoir contourné la condition et forcé l'exécution, le flag affiché est :
+FLAKOZYPSSO_G_ORSYYS.
